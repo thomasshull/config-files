@@ -1,0 +1,7 @@
+[user]
+	name = Tom Shull
+	email = shull1@illinois.edu
+[core]
+	editor = vim
+[merge]
+	tool = vimdiff
