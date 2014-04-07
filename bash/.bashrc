@@ -8,4 +8,7 @@ alias ll='ls -la'
 alias ls='ls -G'
 alias vi='vim'
 
+alias ..='cd ..'
+alias ...='cd ../..'
+
 set -o vi
