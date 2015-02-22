@@ -97,3 +97,5 @@ set nu
 set shiftwidth=2
 set tabstop=2
 set backupdir=~/tmp
+set splitbelow
+set splitright
