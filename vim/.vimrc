@@ -21,10 +21,10 @@ call vundle#begin()
 
 " Let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-Plugin 'plasticboy/vim-markdown' " markdown syntax highlighting and shortcuts
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'plasticboy/vim-markdown' " markdown syntax highlighting and shortcuts
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'derekwyatt/vim-scala'
-Plugin 'klen/python-mode'
+" Plugin 'klen/python-mode'
 
 
 " All of your Plugins must be added before the following line
