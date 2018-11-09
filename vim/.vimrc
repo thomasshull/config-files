@@ -14,21 +14,6 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-
-
-" Let Vundle manage Vundle, required
-Plugin 'gmarik/Vundle.vim'
-" Plugin 'plasticboy/vim-markdown' " markdown syntax highlighting and shortcuts
-" Plugin 'Valloric/YouCompleteMe'
-Plugin 'derekwyatt/vim-scala'
-" Plugin 'klen/python-mode'
-
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
 "filetype plugin on
@@ -170,59 +155,4 @@ augroup END
 
 " this is for ctags stuff
 set tags=./tags;
-" this is for you complete me file extension
-let g:ycm_collect_identifiers_from_tags_files = 1
-let g:tex_flavor='latex'
-let g:ycm_filetype_blacklist = {'plaintex' : 1,
-			\ 'tex' : 1,
-			\ 'text': 1}
-" might want to add more filetypes to this blacklist...
-"
-" python stuff
-au FileType Python set autoindent
-au FileType Python set textwidth=79
-au FileType Python set tabstop=4
-au FileType Python set softtabstop=4
-au FileType Python set shiftwidth=4
-au FileType Python set expandtab
-" au FileType Python set list
-" Python-mode
-" Activate rope
-" Keys:
-" K             Show python docs
-" <Ctrl-Space>  Rope autocomplete
-" <Ctrl-c>g     Rope goto definition
-" <Ctrl-c>d     Rope show documentation
-" <Ctrl-c>f     Rope find occurrences
-" <Leader>b     Set, unset breakpoint (g:pymode_breakpoint enabled)
-" [[            Jump on previous class or function (normal, visual, operator modes)
-" ]]            Jump on next class or function (normal, visual, operator modes)
-" [M            Jump on previous class or method (normal, visual, operator modes)
-" ]M            Jump on next class or method (normal, visual, operator modes)
-let g:pymode_rope = 1
 
-" Documentation
-let g:pymode_doc = 1
-let g:pymode_doc_key = 'K'
-
-"Linting
-let g:pymode_lint = 1
-let g:pymode_lint_checker = "pyflakes,pep8"
-" Auto check on save
-let g:pymode_lint_write = 1
-
-" Support virtualenv
-let g:pymode_virtualenv = 1
-
-" Enable breakpoints plugin
-let g:pymode_breakpoint = 1
-let g:pymode_breakpoint_key = '<leader>b'
-
-" syntax highlighting
-let g:pymode_syntax = 1
-let g:pymode_syntax_all = 1
-let g:pymode_syntax_indent_errors = g:pymode_syntax_all
-let g:pymode_syntax_space_errors = g:pymode_syntax_all
-
-" Don't autofold code
-let g:pymode_folding = 0
