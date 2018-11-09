@@ -23,8 +23,10 @@ ln -s ${CONFIG_DIR}/vim/.vimrc ~/.vimrc
 
 #bin
 rm ~/bin
-ln -s ${CONFIG_DIR}/bin ~/bin
+ln -s ${CONFIG_DIR}/bin/linux ~/bin
 
 #to create trashit dir
+mkdir ~/.local/share/Trash
 
 #need to create tmp vim buffer
+mkdir ~/tmp
