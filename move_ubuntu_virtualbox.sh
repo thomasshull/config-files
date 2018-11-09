@@ -25,6 +25,10 @@ ln -s ${CONFIG_DIR}/vim/.vimrc ~/.vimrc
 rm ~/bin
 ln -s ${CONFIG_DIR}/bin/linux ~/bin
 
+#ack-grep
+rm ~/.ackrc
+ln -s ${CONFIG_DIR}/ack/.ackrc ~/.ackrc
+
 #to create trashit dir
 mkdir ~/.local/share/Trash
 
