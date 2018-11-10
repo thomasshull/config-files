@@ -29,6 +29,9 @@ ln -s ${CONFIG_DIR}/bin/linux ~/bin
 rm ~/.ackrc
 ln -s ${CONFIG_DIR}/ack/.ackrc ~/.ackrc
 
+rm ~/.vrapperrc
+ln -s ${CONFIG_DIR}/vrapper/.vrapperrc ~/.vrapperrc
+
 #to create trashit dir
 mkdir ~/.local/share/Trash
 
