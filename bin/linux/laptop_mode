@@ -1,0 +1,7 @@
+#!/bin/bash
+
+#if having problems can do manually via arandr
+#archlinux has good documentation: https://wiki.archlinux.org/index.php/Multihead
+
+xrandr --output DP-2-1 --off
+xrandr --output eDP-1 --brightness 0.8

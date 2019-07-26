@@ -1,6 +1,5 @@
 
 
-#CONFIG_DIR=/home/tshull226/Documents/SideHustle
 CONFIG_DIR=$PWD
 
 rm ~/.bashrc

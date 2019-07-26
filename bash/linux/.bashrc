@@ -1,5 +1,7 @@
+#!/bin/bash
 
-export PATH="~/bin:~/.cargo/bin:$PATH"
+#export PATH="~/bin:~/.cargo/bin:$PATH"
+export PATH="~/bin:$PATH"
 
 if [ -f ~/.git-completion.bash ]; then
     source ~/.git-completion.bash
@@ -17,7 +19,7 @@ alias ...='cd ../..'
 
 set -o vi
 
-alias ack='ack-grep'
+#alias ack='ack-grep'
 
 alias emacs='emacs -nw'
 
