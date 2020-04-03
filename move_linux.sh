@@ -1,9 +1,38 @@
+#!/bin/bash
+
+CONFIG_DIR=$PWD
 
 rm ~/.bashrc
-ln -s /home/tshull226/Documents/SideHustle/config-files/bash/linux/.bashrc ~/.bashrc
+ln -s ${CONFIG_DIR}/bash/linux/.bashrc ~/.bashrc
 
 rm ~/.git-completion.bash
-ln -s /home/tshull226/Documents/SideHustle/config-files/git/.git-completion.bash ~/.git-completion.bash
+ln -s ${CONFIG_DIR}/git/.git-completion.bash ~/.git-completion.bash
 
 rm ~/.gitconfig
-ln -s /home/tshull226/Documents/SideHustle/config-files/git/.gitconfig ~/.gitconfig
+ln -s ${CONFIG_DIR}/git/.gitconfig ~/.gitconfig
+
+
+#tmux
+rm ~/.tmux.conf
+ln -s ${CONFIG_DIR}/tmux/linux/.tmux.conf ~/.tmux.conf
+
+#vimrc
+rm ~/.vimrc
+ln -s ${CONFIG_DIR}/vim/.vimrc ~/.vimrc
+
+#bin
+rm ~/bin
+ln -s ${CONFIG_DIR}/bin/linux ~/bin
+
+#ack-grep
+rm ~/.ackrc
+ln -s ${CONFIG_DIR}/ack/.ackrc ~/.ackrc
+
+rm ~/.vrapperrc
+ln -s ${CONFIG_DIR}/vrapper/.vrapperrc ~/.vrapperrc
+
+#to create trashit dir
+mkdir ~/.local/share/Trash
+
+#need to create tmp vim buffer
+mkdir ~/tmp
