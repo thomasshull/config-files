@@ -11,6 +11,13 @@ ln -s ${CONFIG_DIR}/git/.git-completion.bash ~/.git-completion.bash
 rm ~/.gitconfig
 ln -s ${CONFIG_DIR}/git/.gitconfig ~/.gitconfig
 
+#fish
+rm ~/.config/fish/completions
+ln -s ${CONFIG_DIR}/fish/completions ~/.config/fish/completions
+rm ~/.config/fish/functions
+ln -s ${CONFIG_DIR}/fish/functions ~/.config/fish/functions
+rm ~/.config/fish/config.fish
+ln -s ${CONFIG_DIR}/fish/config.fish ~/.config/fish/config.fish
 
 #tmux
 rm ~/.tmux.conf
