@@ -28,15 +28,8 @@ function sdk --description 'Software Development Kit Manager'
             end
           end
         case '*'
-          if test $env_name = "JAVA_HOME" -a (set -q JAVA_HOME; echo $status) -eq 0
-              if string match '*/.sdkman/*' $JAVA_HOME > /dev/null
-                switch $env_value
-                  case '*/.sdkman/*'
-                    eval set -g $env_name $env_value > /dev/null
-                end
-              else
-                 echo "NOTE: not overwriting JAVA_HOME($JAVA_HOME)"
-              end
+          if test $env_name = "JAVA_HOME" -a (set -q JAVA_HOME; echo $status) -eq 0 -a (set -q CUSTOM_JAVA_HOME; echo $status) -eq 0
+             echo "NOTE: not overwriting JAVA_HOME($JAVA_HOME)"
           else
               switch $env_value
                 case '*/.sdkman/*'
@@ -49,4 +42,5 @@ function sdk --description 'Software Development Kit Manager'
 
     command rm -f $after_env
     command rm -f $path_env
+    set -gx SDKMAN_INITIALIZED 1
 end
