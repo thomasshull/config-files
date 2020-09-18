@@ -24,3 +24,9 @@ set -o vi
 alias emacs='emacs -nw'
 
 alias vpn='/opt/cisco/anyconnect/bin/vpn'
+
+alias vim='vimx'
+
+#for i3 terminal
+export TERMINAL=/usr/bin/gnome-terminal
+

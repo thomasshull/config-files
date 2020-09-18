@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """
 Basic CPU & Memory Usage for Tmux
@@ -38,7 +38,7 @@ def info():
 
 def main():
     try:
-        print info()
+        print(info())
     except (KeyboardInterrupt, SystemExit):
         pass
 
